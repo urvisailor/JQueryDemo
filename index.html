@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<html>
+	<head>
+		<title>BooksToCreate</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body style="">
+	    <div id="parentDiv">
+	    	<div class="header">
+				<img src="images/logo2.png" height="50px" width="50px">
+			    <h1>BookToCreate</h1>				
+		    	<ul class="nav">
+		      	<li><a href="">Home</a></li>
+				<li><a href="">Contact Us</a></li>
+				<li><a href="">Review</a></li>
+				<li><a href="">AboutUs</a></li>
+		      </ul>			
+			
+
+		    </div>
+		      <h2>Gallery</h2>
+			<div id="content">
+				<div class="row1">
+						<img class="sliders" src="images/book1.jpg" height="100px" width="100px">
+						<img class="sliders" src="images/book2.jpg" height="100px" width="100px">
+						<img class="sliders" src="images/book3.jpg" height="100px" width="100px">					
+				</div>
+			
+			</div>
+			<div class="form-data">
+			<form id="form1">
+			<div class="row">
+				<div class="col-25">
+					<label id="label">Full Name:</label>
+				</div>
+
+				<div class="col-75">
+					<input type="text" name="fname" id="fname" placeholder="Enter Full Name">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label id="label">Email-ID:</label>
+				</div>
+
+				<div class="col-75">
+					<input type="text" name="email" id="email" placeholder="Enter Email-ID">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label id="label">Query?</label>
+				</div>
+
+				<div class="col-75">
+					<textarea placeholder="Enter your query" id="addq" style="height: 200px;"></textarea>
+				</div>
+			</div>
+			<div class="row">				
+					<input type="submit" name="submit" id="btn" value="Submit">
+			</div>
+				
+		
+		</form>
+		<button id="btn1">footer</button>
+			
+		</div>
+			<div id="footer">
+				&copy;remos.com
+				<div id="div1">hgh</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+		 	$(".header").slideUp(200).slideDown(2000);
+		 	//#("img").animate({left:'250px'});
+		 	   // $("h1").animate({left: '250px'});
+
+		 	  $(":text").hover(function(){
+		 	  	$(this).css('background-color','yellow');
+		 	  });
+		 	  $("textarea").hover(function(){
+		 	  	$(this).css('background-color','yellow');
+		 	  }); 	
+		 	  
+
+		 	   $(":text").mouseleave(function(){
+		 	  	$(this).css('background-color','white');
+		 	  });
+		 	  $("textarea").mouseleave(function(){
+		 	  	$(this).css('background-color','white');
+		 	  });
+
+		 	  
+		});	
+
+			$("#btn1").click(function(){
+		 	  		alert("hello");		 	  	
+		 	  		$.ajax({url: "present.txt", success: function(result){
+      				 $("#div1").html(result);
+    			}});
+		 	  });
+		</script>		 
+	</body>	
+</html>

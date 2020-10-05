@@ -1,0 +1,130 @@
+            .nav{
+				margin:0;
+				padding: 0;
+				background-color: black;
+				text-align: left;
+				border-radius: 25px;
+				list-style-type: none;
+				margin-right: 310px;
+    			margin-left: 317px;
+			}
+			.nav li{
+				display: inline-block;
+				font-size: 20px;
+				padding: 25px;
+				margin-left: 26px;
+			}
+
+			li a{
+				color:white;
+				font-family:serif;
+			}
+			li:hover{
+				background-color: #f54734;
+			}
+			
+			#content{
+				width:100%;
+				height:75%;
+				margin-top: 25px;
+			}
+			#footer{
+				width:100%;
+				background-color: #f78383;
+				display: inline-block;
+				height: 25%;
+			}
+
+			.header{
+				/*margin-top: 100px;*/
+				background-image: url('images/back1.jpg');
+				    height: 389px;
+
+			}
+			.row1{
+			    width:100%
+			    margin-top:20px;
+			    margin-left: 10px;
+			}
+			.sliders{
+				height:340px;
+				width:406px;
+
+			}
+			h1{
+				text-align: center;
+				color:white;
+				
+			}
+			h2{
+				text-align: center;
+			}
+			#footer{
+				text-align: center;
+			}
+
+			.form-data{
+
+				margin-top: 10px;
+				width: 100%;
+				background-color: black;
+				margin-block-start:-1px;
+			}
+
+			.row:after{
+				content:"";
+				display: table;
+				clear: both;
+			}
+			#label{
+				padding: 12px 12px 12px 10px;
+				display: inline-block;
+				color:white;
+			}
+
+			input[type=text],textarea{
+				width: 96%;
+				padding: 12px;
+				border:1px solid #ccc;
+				border-radius: 4px;
+				resize: vertical;
+				color:white;
+				position: relative;
+			}
+			input[type=submit]{
+				color:black;
+				background-color: white;
+				border-radius:10px;
+				float:right;
+				cursor: pointer;
+				padding: 15px 24px;
+				margin:10px 29px;
+			}
+			input[type=submit]:hover{
+				background-color: gray;
+			}
+			.col-25{
+					float: left;
+					width: 25%;
+					margin-top: 10px;
+			}
+			.col-75{
+				float: right;
+				width: 75%;
+				margin-top: 10px;
+
+			}
+			#div1{
+				color:white;
+				font-size: 20px; 
+			}
+			@media screen and (max-width: 600px){
+				  .col-25, .col-75, input[type=submit],.nav {
+					width: 100%;
+					margin:0;
+				}
+				.sliders,.header{
+					width:100%;		
+				}
+
+			}
